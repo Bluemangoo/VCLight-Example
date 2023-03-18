@@ -1,0 +1,15 @@
+{
+  "name": "vclight-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vercel dev"
+  },
+  "dependencies": {
+    "vercel": "^28.17.0",
+    "vclight-router": "^1.1.0"
+  },
+  "devDependencies": {
+    "@vercel/node": "^2.9.13"
+  }
+}
