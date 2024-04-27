@@ -1,9 +1,3 @@
-import VCLight from "vclight";
-import router from "./app/router";
-import { VercelRequest, VercelResponse } from "@vercel/node";
+import app from "./app/app";
 
-module.exports = async function(request: VercelRequest, response: VercelResponse) {
-    const app = new VCLight();
-    app.use(router);
-    await app.fetch(request, response);
-};
+export default app.vercelHandler();

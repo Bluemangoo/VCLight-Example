@@ -1,12 +1,9 @@
 import * as http from "http";
-import VCLight from "vclight";
-import router from "../src/app/router";
+import app from "../src/app/app";
 
-const app = new VCLight();
-app.use(router);
 const server = http.createServer();
 
-server.on("request", VCLight.getHttpHandler(app));
+server.on("request", app.httpHandler);
 
 server.listen(3000, () => {
     console.log("VCLight serve");
