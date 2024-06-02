@@ -5,17 +5,17 @@
   "scripts": {
     "dev:vercel": "vercel dev",
     "dev:netlify": "netlify functions:serve",
-    "serve": "ts-node serve"
+    "dev:http": "nodemon src/httpHandler.ts"
   },
   "dependencies": {
-    "vclight": "^3.0.1",
+    "vclight": "^3.0.2",
     "vclight-router": "^1.3.0"
   },
   "devDependencies": {
     "@netlify/functions": "^2.7.0",
     "@types/node": "^20.13.0",
-    "@vercel/node": "^3.1.5",
     "netlify-cli": "^17.25.0",
+    "nodemon": "^3.1.2",
     "ts-node": "^10.9.2",
     "typescript": "^5.4.5",
     "vercel": "^34.2.4"
