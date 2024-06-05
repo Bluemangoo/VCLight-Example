@@ -5,7 +5,7 @@
   "scripts": {
     "dev:vercel": "vercel dev",
     "dev:netlify": "netlify functions:serve",
-    "dev:http": "nodemon src/httpHandler.ts"
+    "dev:http": "nodemon src/httpEntry.ts"
   },
   "dependencies": {
     "vclight": "^3.0.2",
