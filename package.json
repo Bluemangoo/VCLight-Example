@@ -8,8 +8,8 @@
     "dev:http": "nodemon src/httpEntry.ts"
   },
   "dependencies": {
-    "vclight": "^3.0.2",
-    "vclight-router": "^1.3.0"
+    "@vclight/router": "^1.3.0",
+    "vclight": "^3.0.3"
   },
   "devDependencies": {
     "@netlify/functions": "^2.7.0",
